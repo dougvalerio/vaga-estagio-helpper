@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Processo Seletivo Helpper</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Processo Seletivo</h1>
+                <img src="img/helpper-logo.png" alt="logo">
+
+                <button type="submit">Sobre</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="container">
+                <h2>Clientes</h2>
+                <table>
+                    <thead>
+                        <tr class="cliente">
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>CPF / CNPJ</th>
+                            <th>Telefone</th>
+                            <th>CEP</th>
+                            <th>Logradouro</th>
+                            <th>Número</th>
+                            <th>Bairro</th>
+                            <th>Cidade</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-clientes">
+                        <td>Douglas Brito Valerio</td>
+                        <td>douglas.br80@hotmail.com</td>
+                        <td>123.123.123-12</td>
+                        <td>77981134828</td>
+                        <td>46300000</td>
+                        <td>Rua Marechal Deodoro</td>
+                        <td>312</td>
+                        <td>Centro</td>
+                        <td>Caculé</td>
+                        <td>Bahia</td>
+                    </tbody>
+                </table>
+
+                <h3>* Para excluir um cliente, basta clicar duas vezes no cliente que deseja excluir.</h3>
+
+            </section>
+
+
+            <section class="container">
+                <h2 id="titulo-form">Adicionar novo Cliente</h2>
+                <form id="form-adiciona">
+                    <div class="grupo">
+                        <label for="nome">Nome: </label>
+                        <input name="nome" type="text" placeholder="Digite o Nome">
+                    </div>
+                    <div class="grupo">
+                        <label for="email">Email: </label>
+                        <input name="email" type="email" placeholder="Digite o Email">
+                    </div>
+                    <div class="grupo">
+                        <label for="cpf">CPF / CNPJ: </label>
+                        <input name="cpf" type="number" placeholder="Digite o CPF ou CNPJ">
+                    </div>
+                    <div class="grupo">
+                        <label for="telefone">Telefone: </label>
+                        <input name="telefone" type="number" placeholder="Digite o Telefone">
+                    </div>
+                    <div class="grupo">
+                        <label for="cep">CEP: </label>
+                        <input name="cep" type="number" placeholder="Digite o CEP">
+                    </div>
+                    <div class="grupo">
+                        <label for="logradouro">Logradouro: </label>
+                        <input name="logradouro" type="text" placeholder="Digite o Logradouro">
+                    </div>
+                    <div class="grupo">
+                        <label for="numero">Número: </label>
+                        <input name="numero" type="number" placeholder="Digite o Número">
+                    </div>
+                    <div class="grupo">
+                        <label for="bairro">Bairro: </label>
+                        <input name="bairro" type="text" placeholder="Digite o Bairro">
+                    </div>
+                    <div class="grupo">
+                        <label for="cidade">Cidade: </label>
+                        <input name="cidade" type="text" placeholder="Digite o Cidade">
+                    </div>
+                    <div class="grupo">
+                        <label for="estado">Estado: </label>
+                        <input name="estado" type="text" placeholder="Digite o Estado">
+                    </div>
+
+                    <br>
+                    <button id="adicionar-cliente" class="botao bto-principal">Adicionar</button>
+                </form>
+            </section>
+        </main>
+
+        <script src="js/index.js"></script>
+        <script src="js/remover-cliente.js"></script>
+
+    </body>
+</html>
