@@ -30,7 +30,7 @@ header img{
 
 header button{
     float: right;
-    margin: 0.8em 0 0 0;
+    margin: 0.5em 0 0 0;
 }
 
 
@@ -122,8 +122,15 @@ label{
 }
 
 button{
-	
-
+	border:1px solid #25692A;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:13px;
+	padding:6px 10px;
+	text-decoration:none;
 }
 
 input{
